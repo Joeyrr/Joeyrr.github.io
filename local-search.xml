@@ -8,7 +8,7 @@
     <link href="/2022/04/10/talk-from-dvc/"/>
     <url>/2022/04/10/talk-from-dvc/</url>
     
-    <content type="html"><![CDATA[<h3 id="第一个视频压缩端到端框架DVC"><a href="#第一个视频压缩端到端框架DVC" class="headerlink" title="第一个视频压缩端到端框架DVC"></a>第一个视频压缩端到端框架DVC</h3><p><img src="/.com//DVC.png" alt="DVC"></p><p>上交鲁国博士（现北理助理教授）于2019CVPR提出了首个端到端视频编码框架，是端到端视频编码的开山之作，整体架构与传统视频编码的架构保持一致，但使用神经网络实现了端到端的视频编码。</p><p>DVC框架整体可以分为四个重要的子网络：</p><ul><li><p>光流估计</p></li><li><p>MV编解码</p></li><li><p>残差编解码</p></li><li><p>码率估计</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="第一个视频压缩端到端框架DVC"><a href="#第一个视频压缩端到端框架DVC" class="headerlink" title="第一个视频压缩端到端框架DVC"></a>第一个视频压缩端到端框架DVC</h3><p><img src="https://raw.githubusercontent.com/Joeyrr/blog-img/main/talk-from-dvc_DVC.png" alt="DVC"></p><p>上交鲁国博士（现北理助理教授）于2019CVPR提出了首个端到端视频编码框架，是端到端视频编码的开山之作，整体架构与传统视频编码的架构保持一致，但使用神经网络实现了端到端的视频编码。</p><p>DVC框架整体可以分为四个重要的子网络：</p><ul><li><p>光流估计</p></li><li><p>MV编解码</p></li><li><p>残差编解码</p></li><li><p>码率估计</p></li></ul>]]></content>
     
     
     
