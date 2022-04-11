@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Joeyrr/blog-img/main/talk-from-dvc_MC-net.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Joeyrr/blog-img/main/talk-from-dvc_Resi-net.png">
 <meta property="article:published_time" content="2022-04-10T05:11:31.000Z">
-<meta property="article:modified_time" content="2022-04-10T14:54:55.864Z">
+<meta property="article:modified_time" content="2022-04-11T01:49:07.135Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Deep Codec">
 <meta name="twitter:card" content="summary_large_image">
@@ -202,7 +202,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1k 字
+      1.1k 字
     </span>
   
 
@@ -289,7 +289,7 @@
 <img src="https://raw.githubusercontent.com/Joeyrr/blog-img/main/talk-from-dvc_Resi-net.png" srcset="/img/loading.gif" lazyload width="80%" height="80%">
 </div>
 <p>由于该端到端框架并不是基于块的编码，且运动补偿网络将解码前一帧、运动补偿帧和运动矢量concatenate后获得补偿后帧，该过程实现了类似传统框架中的环路滤波的效果。</p>
-<p>此外，由于量化过程不可导，</p>
+<p>注意，由于量化过程不可导，这里在训练过程中增加了均匀噪声，和 Balle 的做法一致。</p>
 <p>DVC作为端到端视频编码的开山之作，主体网络结构借鉴于 Balle 的端到端图像压缩框架，从性能上看，在低码率情况下能和 libx265 veryfast 预设下效率相当，优于 libx264，该性能表现还是比较不错的。但该架构也存在不足之处，比如文中也提到过，网络仅将前一帧作为参考帧，所以压缩性能比不过使用了多参考帧的传统框架也是理所当然的；此外，模型似乎局限于较低码率场景下。考虑后续的改进，一方面可以增加多参考帧，另一方面可以改进失真度量方式，以更符合人眼主观感知特性。</p>
 
             </div>
